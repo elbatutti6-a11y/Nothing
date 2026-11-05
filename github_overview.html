@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Platform Overview</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --text-muted: #8b949e;
+            --border-color: #30363d;
+            --accent-color: #58a6ff;
+            --accent-success: #238636;
+            --card-bg: #161b22;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+
+        p {
+            margin: 16px 0;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .highlight-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: var(--card-bg);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #1f242c;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>GitHub</h1>
+            <p>A cloud-based, AI-powered developer platform used by millions of engineers to store, manage, track, and collaborate on software projects.</p>
+        </header>
+
+        <section>
+            <h2>Core Features & Workflow</h2>
+            <p>GitHub acts as an online repository hosting service utilizing <strong>Git</strong>, an open-source version control system. It provides teams with powerful tools to manage code evolution safely:</p>
+            
+            <ul>
+                <li><span class="feature-title">Repositories (Repos):</span> Digital project folders that store all code files alongside their complete revision history.</li>
+                <li><span class="feature-title">Commits:</span> Snapshot saves of code at specific moments, allowing developers to roll back to older versions if a bug is introduced.</li>
+                <li><span class="feature-title">Branching & Merging:</span> Isolating changes into a separate timeline to safely test new ideas without breaking the production code.</li>
+                <li><span class="feature-title">Pull Requests (PRs):</span> Formally proposing changes from a branch to the main project to initiate peer code reviews.</li>
+                <li><span class="feature-title">Issue Tracking:</span> Built-in project management system featuring labels, milestones, and assignments to catalog bugs and tasks.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>The Ecosystem</h2>
+            <p>Beyond standard version control, GitHub offers an expansive suite of software development lifecycle tools to optimize delivery:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong><a href="https://github.com" target="_blank">GitHub Copilot</a></strong></td>
+                        <td>An AI pair programmer providing real-time code completions, explanations, and debugging support.</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="https://github.com" target="_blank">GitHub Actions</a></strong></td>
+                        <td>Built-in CI/CD automation pipelines for building, testing, and deploying applications natively.</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="https://github.com" target="_blank">GitHub Codespaces</a></strong></td>
+                        <td>Secure, on-demand cloud developer environments configured to code from anywhere inside a browser.</td>
+                    </tr>
+                    <tr>
+                        <td><strong><a href="https://github.com" target="_blank">GitHub Advanced Security</a></strong></td>
+                        <td>Automated secret scanning, dependency tracking, and vulnerability detection before code deployment.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <div class="highlight-box">
+                <h2>Git vs. GitHub: What's the Difference?</h2>
+                <p>It is important to separate the underlying tool from the hosting platform. <strong>Git</strong> is the local code versioning software installed directly on a machine. Conversely, <strong>GitHub</strong> is the online cloud infrastructure built to host those Git records remotely and facilitate real-time engineering collaboration.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>GitHub Overview Document • Built with responsive modern HTML/CSS design</p>
+        </footer>
+    </div>
+
+</body>
+</html>
